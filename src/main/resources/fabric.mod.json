@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "coloredcampfire",
+  "version": "1.0.0",
+  "name": "Colored Campfire",
+  "description": "Command Macros!",
+  "authors": [
+    "kyrptonaught"
+  ],
+  "contact": {
+    "homepage": "https://github.com/kyrptonaught/CMDKeybinds",
+    "sources": "https://github.com/kyrptonaught/CMDKeybinds"
+  },
+  "license": "MIT",
+  "icon": "assets/coloredcampfire/icon.png",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "net.kyrptonaught.coloredcampfire.json",
+      "environment": "client"
+    }
+  ],
+  "entrypoints": {
+    "client": [
+      "net.kyrptonaught.coloredcampfire.ColoredCampfireMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "custom": {
+    "modmenu:clientsideOnly": true
+  }
+}
