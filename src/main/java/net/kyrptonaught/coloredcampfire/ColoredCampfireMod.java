@@ -22,7 +22,7 @@ public class ColoredCampfireMod implements ClientModInitializer {
     public void onInitializeClient() {
         ClientSpriteRegistryCallback.event(SpriteAtlasTexture.PARTICLE_ATLAS_TEX).register((atlasTexture, registry) -> {
             for (int i = 0; i < 12; i++) {
-                registry.register(new Identifier(MOD_ID,"big_smoke_" + i));
+                registry.register(new Identifier(MOD_ID, "big_smoke_" + i));
             }
         });
         ParticleFactoryRegistry.getInstance().register(COLOREDSMOKE, ColoredSmokeFactory::new);

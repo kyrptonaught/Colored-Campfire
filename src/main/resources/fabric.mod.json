@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "coloredcampfire",
   "version": "1.0.0",
-  "name": "Colored Campfire",
-  "description": "Command Macros!",
+  "name": "Colorful Campfire Smoke",
+  "description": "Colorful campfire smoke",
   "authors": [
     "kyrptonaught"
   ],
   "contact": {
-    "homepage": "https://github.com/kyrptonaught/CMDKeybinds",
-    "sources": "https://github.com/kyrptonaught/CMDKeybinds"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/colorful-campfire-smoke",
+    "sources": "https://github.com/kyrptonaught/Colored-Campfire"
   },
   "license": "MIT",
   "icon": "assets/coloredcampfire/icon.png",
