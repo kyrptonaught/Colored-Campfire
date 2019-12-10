@@ -10,7 +10,6 @@ import net.minecraft.client.particle.ParticleFactory;
 import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.world.World;
 
-import java.util.HashMap;
 
 @Environment(EnvType.CLIENT)
 public class ColoredSmokeFactory implements ParticleFactory<BlockStateParticleEffect> {
@@ -29,7 +28,7 @@ public class ColoredSmokeFactory implements ParticleFactory<BlockStateParticleEf
             int n = (color & 255);
             ColoredCampfireMod.COLOR_CACHE.put(color, new float[]{(float) l / 255.0F, (float) m / 255.0F, (float) n / 255.0F});
         }
-        CampfireSmokeParticle particle = (CampfireSmokeParticle) new CampfireSmokeParticle.SignalSmokeFactory(sprites).method_18820(null, world, x, y, z, vX, vY, vZ);
+        CampfireSmokeParticle particle = (CampfireSmokeParticle) new CampfireSmokeParticle.SignalSmokeFactory(sprites).createParticle(null, world, x, y, z, vX, vY, vZ);
         float[] rgb = ColoredCampfireMod.COLOR_CACHE.get(color);
         particle.setColor(rgb[0], rgb[1], rgb[2]);
         return particle;
