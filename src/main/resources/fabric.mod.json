@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "coloredcampfire",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "name": "Colorful Campfire Smoke",
   "description": "Colorful campfire smoke",
   "authors": [
@@ -13,11 +13,11 @@
   },
   "license": "MIT",
   "icon": "assets/coloredcampfire/icon.png",
-  "environment": "client",
+  "environment": "*",
   "mixins": [
     {
       "config": "net.kyrptonaught.coloredcampfire.json",
-      "environment": "client"
+      "environment": "*"
     }
   ],
   "entrypoints": {

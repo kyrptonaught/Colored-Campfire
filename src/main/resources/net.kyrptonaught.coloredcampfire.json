@@ -3,7 +3,8 @@
   "package": "net.kyrptonaught.coloredcampfire.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinWool"
+    "MixinCampfire",
+    "MixinCampfireParticle"
   ],
   "injectors": {
     "defaultRequire": 1
