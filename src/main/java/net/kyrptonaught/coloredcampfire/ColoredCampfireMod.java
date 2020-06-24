@@ -15,7 +15,6 @@ public class ColoredCampfireMod implements ClientModInitializer {
     }
 
     public static float[] getColorForBlock(int color) {
-
         if (!COLOR_CACHE.containsKey(color)) {
             int l = (color & 16711680) >> 16;
             int m = (color & '\uff00') >> 8;
