@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.2.6-SNAPSHOT'
+	id 'fabric-loom' version '0.5-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -71,6 +71,6 @@ publishing {
 	repositories {
 		// uncomment to publish to the local maven
 		// mavenLocal()
-		maven { url 'https://maven.fabricmc.net/io/github/prospector/modmenu/ModMenu/' }
+		\
 	}
 }
