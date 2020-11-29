@@ -17,7 +17,7 @@ public abstract class MixinCampfireParticle extends SpriteBillboardParticle {
         super(world, d, e, f);
     }
 
-    @Inject(method = "<init>", at = @At(value = "RETURN"), cancellable = true)
+    @Inject(method = "<init>", at = @At(value = "RETURN"))
     private void CC$setColor(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, boolean bl, CallbackInfo ci) {
         BlockPos pos = new BlockPos(velocityX, velocityY, velocityZ);
         if (world.getBlockState(pos).getBlock() instanceof CampfireBlock && world.isReceivingRedstonePower(pos)) {
