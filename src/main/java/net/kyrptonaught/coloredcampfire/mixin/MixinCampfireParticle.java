@@ -21,7 +21,7 @@ public abstract class MixinCampfireParticle extends SpriteBillboardParticle {
     private void CC$setColor(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, boolean bl, CallbackInfo ci) {
         BlockPos pos = new BlockPos(velocityX, velocityY, velocityZ);
         if (world.getBlockState(pos).getBlock() instanceof CampfireBlock && world.isReceivingRedstonePower(pos)) {
-            int color = world.getBlockState(pos.down()).getTopMaterialColor(world, null).color;
+            int color = world.getBlockState(pos.down()).getMapColor(world, null).color;
             float[] rgb = ColoredCampfireMod.getColorForBlock(color);
             setColor(rgb[0], rgb[1], rgb[2]);
             this.velocityX = 0;
