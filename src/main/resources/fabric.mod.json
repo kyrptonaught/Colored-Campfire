@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "coloredcampfire",
-  "version": "1.1.5-1.16",
+  "version": "1.1.5-1.18",
   "name": "Colorful Campfire Smoke",
   "description": "Colorful campfire smoke",
   "authors": [
@@ -21,9 +21,9 @@
     }
   ],
   "depends": {
-    "fabricloader": ">=0.11.3",
-    "minecraft": "1.17.x",
-    "java": ">=16"
+    "fabricloader": ">=0.13",
+    "minecraft": ">=1.18",
+    "java": ">=17"
   },
   "custom": {
     "modmenu:clientsideOnly": true
